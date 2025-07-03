@@ -3,42 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Walker Lawn Services in Atlanta, GA - Professional Residential & Commercial Lawn Care Solutions. Call 770-896-2847 for Bookings.">
-  <meta name="keywords" content="Lawn care, Atlanta lawn service, Commercial mowing, Residential yard, Walker Lawn Services, landscaping">
-  <meta name="author" content="Walker Lawn Services">
+  <meta name="description" content="Walker Lawn Services – Atlanta’s trusted provider of residential and commercial lawn care. Call today for a quote!" />
+  <meta name="keywords" content="lawn care Atlanta, grass cutting, Walker Lawn Services, landscaping, mowing, commercial lawn care Atlanta" />
+  <meta name="author" content="Akil Walker" />
   <title>Walker Lawn Services | Atlanta, GA</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
+
+  <!-- SCHEMA.ORG STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Walker Lawn Services",
+    "image": "https://www.walkerlawnservices.com/assets/logo.jpg",
+    "url": "https://www.walkerlawnservices.com",
+    "telephone": "+17708962847",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Atlanta Metro Area",
+      "addressLocality": "Atlanta",
+      "addressRegion": "GA",
+      "postalCode": "30349",
+      "addressCountry": "US"
+    },
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Atlanta Metro"
+    }
+  }
+  </script>
 </head>
 <body>
+  <!-- HEADER -->
   <header>
+    <img src="assets/logo.jpg" alt="Walker Lawn Services Logo" class="logo" />
     <h1>Walker Lawn Services</h1>
-    <p>Premium Residential & Commercial Lawn Care in Atlanta, GA</p>
-    <a href="tel:+17708962847" class="cta-button">Call: (770) 896-2847</a>
+    <p>Atlanta’s Premium Lawn Care – Residential & Commercial</p>
+    <a href="tel:+17708962847" class="cta-button">📞 Call Now: (770) 896-2847</a>
   </header>
 
+  <!-- SERVICES -->
   <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Basic Mow, Trim, Blow – $45+</li>
-      <li>Weekly Lawn Maintenance – $160/mo</li>
-      <li>Edging and Mulching – $75+</li>
-      <li>Leaf Removal – $65+</li>
-      <li>Bush Trimming – $50+</li>
-      <li>Sod Installation – $1.50/sq ft</li>
-      <li>Aeration & Overseeding – $120+</li>
-      <li>Commercial Packages Available</li>
-    </ul>
+    <h2>Our Lawn Services & Pricing</h2>
+    <div class="service-grid">
+      <div class="card">
+        <h3>Basic Mow, Trim & Blow</h3>
+        <p>Weekly or one-time service. Residential: <strong>$45+</strong>, Commercial: <strong>$75+</strong></p>
+      </div>
+      <div class="card">
+        <h3>Weekly Lawn Maintenance</h3>
+        <p>Residential: <strong>$160/month</strong>, Commercial: <strong>$275/month</strong></p>
+      </div>
+      <div class="card">
+        <h3>Edging & Mulching</h3>
+        <p>Fresh mulch beds with clean edge cuts. <strong>$75–$150+</strong></p>
+      </div>
+      <div class="card">
+        <h3>Leaf Removal</h3>
+        <p>Efficient fall and storm cleanups. <strong>$65–$120+</strong></p>
+      </div>
+      <div class="card">
+        <h3>Bush Trimming</h3>
+        <p>Shape and sculpt your landscape. <strong>$50–$100+</strong></p>
+      </div>
+      <div class="card">
+        <h3>Sod Installation</h3>
+        <p>Instant lawn upgrade. Residential: <strong>$1.50/sq ft</strong>, Commercial: <strong>$2.00/sq ft</strong></p>
+      </div>
+      <div class="card">
+        <h3>Aeration & Overseeding</h3>
+        <p>Thicker, healthier grass. Residential: <strong>$120+</strong>, Commercial: <strong>$225+</strong></p>
+      </div>
+      <div class="card">
+        <h3>Full-Service Lawn Package</h3>
+        <p>Residential: <strong>$275/month</strong>, Commercial: <strong>$450/month</strong></p>
+      </div>
+    </div>
   </section>
 
-  <section id="calendar">
-    <h2>Schedule an Appointment</h2>
-    <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-    <p>Need help booking? Call or Text: <strong>(770) 896-2847</strong></p>
+  <!-- QUOTE FORM -->
+  <section id="quote">
+    <h2>Request a Free Quote</h2>
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <input type="hidden" name="_subject" value="New Quote Request - Walker Lawn Services" />
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="text" name="Address" placeholder="Service Address" required />
+      <input type="email" name="Email" placeholder="Email" />
+      <input type="tel" name="Phone" placeholder="Phone Number" required />
+
+      <label for="service">Select a Service:</label>
+      <select name="Service" id="service" required>
+        <option value="">-- Choose One --</option>
+        <option value="Basic Mow, Trim & Blow">Basic Mow, Trim & Blow</option>
+        <option value="Lawn Maintenance">Weekly Lawn Maintenance</option>
+        <option value="Edging & Mulching">Edging & Mulching</option>
+        <option value="Leaf Removal">Leaf Removal</option>
+        <option value="Bush Trimming">Bush Trimming</option>
+        <option value="Sod Installation">Sod Installation</option>
+        <option value="Aeration & Overseeding">Aeration & Overseeding</option>
+        <option value="Full Service">Full-Service Package</option>
+        <option value="Commercial Estimate">Commercial Estimate</option>
+      </select>
+
+      <textarea name="Message" rows="4" placeholder="Additional notes or preferred days..."></textarea>
+
+      <button type="submit">📩 Get My Free Quote</button>
+    </form>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Walker Lawn Services | Designed by Akil Walker</p>
+    <p>&copy; 2025 Walker Lawn Services | Atlanta, GA | Designed by Akil Walker</p>
   </footer>
 </body>
 </html>
