@@ -212,3 +212,13 @@ footer {
     font-size: 1rem;
   }
 }
+.spinner {
+  font-size: 1rem;
+  color: #2e7d32;
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
