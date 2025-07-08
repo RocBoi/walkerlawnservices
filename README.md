@@ -16,7 +16,7 @@ Welcome to the official website repository for **Walker Lawn Services**, designe
 
 **Akil Walker**  
 Phone: (770) 896-2847  
-Email: [Insert your email here]  
+Email: akil.walker@walkerlawnservices.com 
 Location: Atlanta, Georgia, USA
 
 ---
