@@ -18,6 +18,7 @@
     "name": "Walker Lawn Services",
     "image": "https://www.walkerlawnservices.com/assets/logo.jpg",
     "url": "https://www.walkerlawnservices.com",
+    "email": "akil.walker@walkerlawnservices.com",
     "telephone": "+17708962847",
     "address": {
       "@type": "PostalAddress",
@@ -42,6 +43,7 @@
     <h1>Walker Lawn Services</h1>
     <p>Atlanta’s Premium Lawn Care – Residential & Commercial</p>
     <a href="tel:+17708962847" class="cta-button">📞 Call Now: (770) 896-2847</a>
+    <p><a href="mailto:akil.walker@walkerlawnservices.com" class="email-link">📧 Email: akil.walker@walkerlawnservices.com</a></p>
   </header>
 
   <!-- SERVICES -->
@@ -86,8 +88,10 @@
   <!-- QUOTE FORM -->
   <section id="quote">
     <h2>Request a Free Quote</h2>
-    <form action="https://formsubmit.co/your@email.com" method="POST">
+    <form action="https://formsubmit.co/akil.walker@walkerlawnservices.com" method="POST">
       <input type="hidden" name="_subject" value="New Quote Request - Walker Lawn Services" />
+      <input type="hidden" name="_next" value="https://www.walkerlawnservices.com/thank-you.html" />
+      
       <input type="text" name="Name" placeholder="Your Name" required />
       <input type="text" name="Address" placeholder="Service Address" required />
       <input type="email" name="Email" placeholder="Email" />
