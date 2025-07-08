@@ -88,10 +88,8 @@
   <!-- QUOTE FORM -->
   <section id="quote">
     <h2>Request a Free Quote</h2>
-    <form action="https://formsubmit.co/akil.walker@walkerlawnservices.com" method="POST">
+    <form id="quote-form" action="https://formsubmit.co/ajax/akil.walker@walkerlawnservices.com" method="POST">
       <input type="hidden" name="_subject" value="New Quote Request - Walker Lawn Services" />
-      <input type="hidden" name="_next" value="https://www.walkerlawnservices.com/thank-you.html" />
-      
       <input type="text" name="Name" placeholder="Your Name" required />
       <input type="text" name="Address" placeholder="Service Address" required />
       <input type="email" name="Email" placeholder="Email" />
@@ -114,6 +112,9 @@
       <textarea name="Message" rows="4" placeholder="Additional notes or preferred days..."></textarea>
 
       <button type="submit">📩 Get My Free Quote</button>
+      <div id="form-success" style="display:none; color: green; font-weight: bold; margin-top: 1rem;">
+        ✅ Thank you! Your request was sent successfully.
+      </div>
     </form>
   </section>
 
@@ -121,5 +122,31 @@
   <footer>
     <p>&copy; 2025 Walker Lawn Services | Atlanta, GA | Designed by Akil Walker</p>
   </footer>
+
+  <!-- JS SUCCESS POPUP -->
+  <script>
+    const form = document.getElementById('quote-form');
+    const successMsg = document.getElementById('form-success');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          successMsg.style.display = 'block';
+          form.reset();
+        } else {
+          alert("Something went wrong. Please call (770) 896-2847.");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
